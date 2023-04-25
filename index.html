@@ -1,76 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Mi portafolio | Anias Borja</title>
-    <meta name="description" content="Este es mi portafolio bonito">
-    <meta name="viewport" content="width=device-with, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="author" content="Anías">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Title -->
+    <title>Portafolio | Anias Borja</title>
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.css" />
+
+    <!-- Magnific-Popup CSS -->
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css" />
 </head>
 <body>
-       <header>
-        <nav>
-           <ul>
-               <li>
-                   <a href="./contact.html">Contact</a>
-               </li>
-               <li>
-                <a href="./blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="./projects.html">Projects</a>
-            </li>
-            <li>
-                <a href="./about.html">About</a>
-            </li>
-           </ul>
-        </nav>
-       </header>
-       <main>
-           <div>
-               <img src="https://picsum.photos/500" alt="Mi foto de perfil">
-               <p>Me gusta tomar café y aprender cosas nuevas</p>
-               <div>
-                   <a href="./contact.html">Contact</a>
-               </div>
-               <div>
-                    <h2>Social Media</h2>
-                    <ul>
-                        <li>
-                            <a href="">Twitter</a>
-                            <a href="">Linkedin</a>
-                            <a href="">Instagram</a>
-                        </li>
-                    </ul>
-               </div>
+    <!-------------------- Scroll-Top Area (Start) -------------------->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-------------------- Scroll-Top Area (End) -------------------->
+    <!-------------------- Header Area (Start) -------------------->
+    <header class="header">
+        <!--logo texto-->
+        <a href="#home" class="logo">
+            <h2>Anías Borja</h2>
+        </a>
+         <!--end logo texto-->
+
+          <!--Navbar-->
+          <nav class="navbar">
+            <a href="#">inicio</a>
+            <a href="#about">DatosPersonales</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Diplomas</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </nav>
+
+        <!-- Menubar -->
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <!--Header Area End-->
+
+    <!-------------------- Home Area (Start) -------------------->
+    <section class="home" id="home">
+        <div class="box-container">
+            <div class="content">
+                <div class="text">
+                    <h2>Hola!</h1>
+                    <h1>Soy <span class="typing-text">Programador Jr</span></h1>
+                    <p>Nunca dejes de aprender. no hay nada mas enriquecedor que nutrir la mente.</p>
+                    <p> -Anónimo</p>
+                    <a href="#about " class="btn">SobreMi <i class="fas fa-user"></i></a>
+                </div>
             </div>
-           <h2>AniasBorja Frontend Developer</h2>
-           <ul>
-               <li>
-                   <img src="" alt="c++">
-                   <p>C++</p>
-               </li>
-               <li>
-                   <img src="" alt="css">
-                   <p>CSS</p>
-               </li>
-               <li>
-                   <img src="" alt="HTML">
-                   <p>HTLM</p>
-               </li>
-               <li>
-                   <img src="" alt="js">
-                   <p>JS</p>
-               </li>
+            <div class="image">
+            <img src="https://i.postimg.cc/xC4MrvjB/desarrollo-1.png" alt="Home-Image">
+            </div>
+        </div>
+    </section>
+    <!-------------------- Home Area (End) -------------------->
 
 
-           </ul>
-           <p>Esta va a ser mi descripcion</p>
-       </main>
-       <footer>Todos los derechos reservados</footer>
+
+    <!-------------------- About Area (Start) -------------------->
+    <section class="about" id="about">
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="https://i.postimg.cc/3R2X5y6B/Foto.jpg" alt="About-Image" />
+            </div>
+    
+            <div class="content">
+
+                <h2>Mi nombre es Anías.</h2>
+                <p>Soy estudiante de la carrera de Ingeniería en Sistemas y Soy progrogramador. He creado proyectos personales en Java, javascript, PHP, python. En la parte del Front-End he aprendido de HTML y CSS </p>
+   
+                <div class="about-info">
+
+                    <div class="info">
+                        <h4>Nombre Completo: <span>José Anías Borja Pérez</span></h4>
+                        <h4>Edad: <span>28</span></h4>
+                        <h4>Genero: <span>Masculino</span></h4>
+                        <h4>Ingles: <span>B1</span></h4>
+                        <a href="#" class="btn">download CV <i class="fas fa-download"></i></a>
+                    </div>
+
+                    <div class="counting">
+
+                        <div class="box">
+                            <h1 class="count" data-count="4">4+</h1>
+                            <h3>Proyectos Personales</h3>
+                        </div>
+                        
+                        <div class="box">
+                            <h1 class="count" data-count="100">100+</h1>
+                            <h3>Cursos Completados</h3>
+                        </div>
+            
+                        <div class="box">
+                            <h1 class="count" data-count="80">80+</h1>
+                            <h3>Videos En YouTube</h3>
+                        </div>
+                                    
+                        <!---  <div class="box">
+                            <h1 class="count" data-count="20">20+</h1>
+                            <h3>awards won</h3>
+                        </div> 
+                                -->
+                    </div>
+
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="skill-container">
+
+            <div class="heading">
+                <h2>my <span>skills</span></h2>
+            </div>
+    
+            <div class="skills">
+                <div class="skill-item item1">
+                    <div class="box">
+                        <h3>HTML5<span> 90% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>CSS<span> 60% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>javascript<span> 50% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+    
+                <div class="skill-item item2">
+                    <div class="box">
+                        <h3>Java<span> 60% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Python<span> 40% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>git y github<span> 75% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+
+                <div class="skill-item item3">
+                    <div class="box">
+                        <h3>Base de datos<span> 60% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Ingles<span> 40% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Excel<span> 60% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </section>
+    <!-------------------- About Area (End) -------------------->
+
+    <!--scripts area-->
+    
+    <script>
+        var Typed = (function () {
+        function Typed(elementId, options) {
+          _classCallCheck(this, Typed);
+      
+          // Initialize it up
+          _initializerJs.initializer.load(this, options, elementId);
+          // All systems go!
+          this.begin();
+        }
+
+        var typed = new Typed('.typing-text',{
+
+            strings: ['Estudiante de Ingeniería', 'Desarrollador Java'],
+            typedSpeed: 120,
+            loop: true
+        });
+    </script>
+
+    <!---->
 </body>
 </html>
